@@ -10,11 +10,15 @@ public class Singletone {
     // Идентификатор
     int id = ++count;
 
-    // Только изнутри класса можно делать новые объекты
+    /**
+     * Конструктор приватный - чтобы получить экземпляр класса нужно обязательно вызвать статический метод instance,
+     * который заботится о том, что во всей системе есть только один экземпляр класса.
+     * Только изнутри класса можно делать новые объекты
+     */
     private Singletone() {
     }
 
-    public static Singletone instance() {
+    public synchronized static Singletone instance() {
         // Если нет ещё ни одного экземпляра объекта => создаём
         if (uniqueInstance == null) {
             uniqueInstance = new Singletone();
