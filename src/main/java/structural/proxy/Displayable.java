@@ -1,4 +1,4 @@
-package creational.proxy;
+package structural.proxy;
 
 /**
  * Created by nvans on 02.07.2015.

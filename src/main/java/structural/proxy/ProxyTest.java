@@ -1,4 +1,4 @@
-package creational.proxy;
+package structural.proxy;
 
 import org.junit.Test;
 
