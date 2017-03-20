@@ -13,6 +13,7 @@ public class GameXO {
     public void move(int row, int col) {
         // TODO: проверить что клетка пустая
         field[row][col] = player;
+        // Меняем игрока
         player = (player == 'X') ? 'O' : 'X';
         checkGameOver();
     }
