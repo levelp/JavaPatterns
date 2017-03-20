@@ -17,3 +17,6 @@ JavaPatterns.iml
 
 # Maven results
 target
+
+# Data files
+*.dat
